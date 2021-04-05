@@ -1,0 +1,59 @@
+.Post{
+    background-color: white;
+    max-width: 500px;
+    border: 1px solid lightgray;
+    margin-bottom: 45px;
+}
+
+.Post__image{
+    width: 100%;
+    object-fit: contain;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgrey;
+}
+
+.Post__text{
+    font-weight: normal;
+    padding: 20px;
+}
+
+.Post__header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.Post__avatar{
+    margin-right: 10px;
+
+}
+
+.post__commentBox{
+    display: flex;
+    /* not close to the top so slight marigin */
+    margin-top: 10px;
+}
+
+.post__comments{
+    padding: 20px;
+}
+
+.post__input{
+    flex: 1;
+    border: none;
+    /* to make the border invisible */
+    padding: 10px;
+    /* to increase the size allaround it */
+    border-top: 1px solid lightgray;
+    /* in insta they actually keep a top border  */
+}
+
+.post__button{
+    flex: 0;
+    border: none;
+    /* ?since insta button is light blu clr */
+    color: #6082a3;
+    background-color: transparent;
+   /* button border also invisible like we done it for comnt session */
+   border-top: 1px solid lightgrey;
+}

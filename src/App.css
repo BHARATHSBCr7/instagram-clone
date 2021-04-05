@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+{
+  margin: 0;
+}
+.app{
+  background-color: #FAFAFA;
+  height: 100vh;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__posts{
+  /* arround posts padded all sides */
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__postRight{
+  margin-left: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__header{
+/* now we need to keep the position sticky of the avatar that round symb0l */
+/* so that it will be showing instagram,signin,sunup in the website below  2 lines are responsive for it */
+  position: sticky;
+  top: 0;
+  /* to avoid overlapping */
+  z-index: 1;
+
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  object-fit: contain;
+  /* now sign in and sign up is pushed int to header so flex it to a row */
+  display:  flex;
+/* now to have space inbetween the elements */
+  justify-content: space-between;
+}
+
+.app__headerImage{
+/* header image object fit contain to fix the instagram logo */
+  object-fit: contain;
+}
+
+.app__signup{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

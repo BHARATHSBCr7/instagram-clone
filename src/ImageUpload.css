@@ -1,0 +1,27 @@
+.imageupload{
+    display: flex;
+    flex-direction: column;
+    /* since all are touching we set width */
+    width: 60%;
+    /* to center the elemnets we use auto left and right margujn */
+    margin-left: auto;
+    margin-right: auto;
+    /* to have some spav\ce on top and botom of this component */
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    /* now we need to push it to the bottom but alignment error overlaping occurs*/
+    /* so move it down */
+    /* position: fixed;
+    bottom: 0; */
+
+    /* background-color: white;
+    border-top: 1px solid lightgray; */
+
+}
+
+.imageupload__progress{
+    width: 100%;
+
+
+}
